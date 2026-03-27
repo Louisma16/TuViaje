@@ -30,7 +30,7 @@ const TravelCard = ({
           className="h-full w-full object-cover transition duration-700 hover:scale-105"
         />
         <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent" />
-        <span className="absolute bottom-3 left-3 rounded-full bg-cyan-500/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
+        <span className="absolute bottom-3 left-3 rounded-full bg-orange-500/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
           Top Selección
         </span>
       </div>

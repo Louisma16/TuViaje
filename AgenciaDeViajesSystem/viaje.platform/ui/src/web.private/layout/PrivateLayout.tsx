@@ -1,13 +1,12 @@
 import { type JSX } from "react";
 import { Outlet }             from "react-router";
-import CoverPublic            from "./CoverPrivate.tsx";
 import FooterPublic           from "./FooterPrivate.tsx";
-
+import Nav                    from "../../web.public/layout/Nav";
 const PublicLayout = (): JSX.Element => {
     return (
         <div className={"flex min-h-screen flex-col"}>
 
-            <CoverPublic/>
+            <Nav/>
 
             <main>
                     <Outlet/>

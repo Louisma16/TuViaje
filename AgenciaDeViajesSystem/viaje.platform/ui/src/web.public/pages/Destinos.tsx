@@ -5,7 +5,7 @@ const Destinos = () => {
   const [viajes, setViajes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8003/api/viajes.php")
+    fetch("http://localhost:8004/api/viajes.php")
       .then(res => res.json())
       .then(data => setViajes(data))
       .catch(err => console.error(err));
@@ -28,7 +28,7 @@ const Destinos = () => {
           personasPorViaje={4}
           imagenUrl={
             viaje.image
-              ? `http://localhost:8003/${viaje.image}`
+              ? `http://localhost:8004/${viaje.image}`
               : undefined
           }
           fechaSalida={viaje.start_date}
